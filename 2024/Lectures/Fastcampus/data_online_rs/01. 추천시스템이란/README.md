@@ -50,3 +50,30 @@
         - Constraint-based Recommendation
             - 사용자에게 추천할 때, 정해진 규칙을 바탕으로 추천
 
+<br/>
+
+### 추천시스템 한계
+
+ - Scalability
+    - 실제 서비스 상황은 다양한 종류의 데이터
+    - 학습 또는 분석에 사용한 데이터와는 전혀 다른 실전 데이터
+ - Proactive Recommender System
+    - 특별한 요청이 없어도 사전에 먼저 제공하는 추천서비스
+    - 모바일, 인터넷 등 어디서는 유저에게 끊임없이 좋은 정보를 추천할 수 있는 서비스
+ - Cold-Start Problem
+    - 추천서비스를 위한 데이터 부족
+    - 기본적인 성능을 보장하는  협업필터링 모델 구축이 쉽지 않은 것이 일반적
+    - 컨텐츠 기반 또는 지식 기반의 방법 역시 서비스로 적용하기 어려움
+ - Privacy preserving Recommender System
+    - 개인정보 등 유저 정보가 가장 중요하지만, 직접적으로 사용하기 어려움
+ - Mobile devices and Usage Contexts
+    - 개별 상황 또는 환경 등에 따라 다른 컨텍스트를 사용
+ - Long-term and Short-term user preference
+    - 개인 또는 그룹의 단기/장기 관심사항
+    - 추천받고 싶은 아이템이 현재 또는 과거 중 어느 시기와 관련 있는지 파악하기 어려움
+ - Generic User models and Cross Domain Recommender System
+    - 하나의 모델을 여러가지 데이터에 적용하기 어려움
+    - 비슷한 도메인의 데이터를 활용해도 동일한 성능의 추천시스템을 기대하기 어려움
+ - Starvation and Diversity
+    - Starvation: 필요한 컴퓨터 자원을 끊임없이 가져오지 못하는 상황
+    - 유저/아이템이 다양하고, 모든 유저/아이템에 더 많은 관심을 부여해야 함
